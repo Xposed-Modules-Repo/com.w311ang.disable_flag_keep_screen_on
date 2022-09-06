@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Disable-FLAG_KEEP_SCREEN_ON</string>
-    <string name="xposed_description">Disables FLAG_KEEP_SCREEN_ON.</string>
-    <string-array name="scope">
-        <!-- <item>android</item> -->
-    </string-array>
-</resources>

@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Disable-FLAG_KEEP_SCREEN_ON"
