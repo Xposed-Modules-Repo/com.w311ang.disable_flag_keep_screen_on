@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - uses: w311ang/repository-mirroring-action@v1
+      - uses: w311ang/repository-mirroring-action-without-tags@master
         with:
           target_repo_url:
             git@github.com:Xposed-Modules-Repo/com.w311ang.disable_flag_keep_screen_on.git
