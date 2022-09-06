@@ -1,21 +1,21 @@
 <img width="128" height="128" src="https://i.imgur.com/MFgAUdY.png" alt="icon_square">
 
-# Xposed-Disable-FLAG_SECURE
+# Xposed-Disable-FLAG_KEEP_SCREEN_ON
 
-Xposed Module to Disable `FLAG_SECURE`, enabling screenshots, screen sharing and recording in apps that normally
+Xposed Module to Disable `FLAG_KEEP_SCREEN_ON`, enabling screenshots, screen sharing and recording in apps that normally
 wouldn't allow it.
 
-## [Downloads](https://github.com/VarunS2002/Xposed-Disable-FLAG_SECURE/releases/)
+## [Downloads](https://github.com/VarunS2002/Xposed-Disable-FLAG_KEEP_SCREEN_ON/releases/)
 
-> [![APK: v2.0.0](https://img.shields.io/badge/APK-v2.0.0-brightgreen)](https://github.com/VarunS2002/Xposed-Disable-FLAG_SECURE/releases/download/2.0.0/Xposed-Disable-FLAG_SECURE_2.0.0.apk)
-![Download-Count](https://img.shields.io/github/downloads/VarunS2002/Xposed-Disable-FLAG_SECURE/total?color=blue)
+> [![APK: v2.0.0](https://img.shields.io/badge/APK-v2.0.0-brightgreen)](https://github.com/VarunS2002/Xposed-Disable-FLAG_KEEP_SCREEN_ON/releases/download/2.0.0/Xposed-Disable-FLAG_KEEP_SCREEN_ON_2.0.0.apk)
+![Download-Count](https://img.shields.io/github/downloads/VarunS2002/Xposed-Disable-FLAG_KEEP_SCREEN_ON/total?color=blue)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Module Repository Listings:
 
-### [Xposed Repository](https://repo.xposed.info/module/com.varuns2002.disable_flag_secure)
+### [Xposed Repository](https://repo.xposed.info/module/com.varuns2002.disable_flag_keep_screen_on)
 
-### [LSPosed Repository](https://github.com/Xposed-Modules-Repo/com.varuns2002.disable_flag_secure)
+### [LSPosed Repository](https://github.com/Xposed-Modules-Repo/com.varuns2002.disable_flag_keep_screen_on)
 
 ## Requirements:
 
@@ -77,8 +77,8 @@ wouldn't allow it.
 - If you face any issue or have a suggestion then feel free to open an issue.
 
 - This app is a fork of the existing apps but with better compatibility:
-    - https://github.com/veeti/DisableFlagSecure/
-    - https://github.com/LSPosed/DisableFlagSecure/
+    - https://github.com/veeti/DisableFlagKeepScreenOn/
+    - https://github.com/LSPosed/DisableFlagKeepScreenOn/
     - https://gitlab.com/azhao12345/disableflagsecure/
 
 ### Additional Information on DRM encrypted content

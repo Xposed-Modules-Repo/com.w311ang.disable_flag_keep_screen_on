@@ -1,4 +1,4 @@
-package com.varuns2002.disable_flag_secure
+package com.varuns2002.disable_flag_keep_screen_on
 
 import android.view.SurfaceView
 import android.view.Window
@@ -13,7 +13,7 @@ import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam
 
-class DisableFlagSecure : IXposedHookLoadPackage {
+class DisableFlagKeepScreenOn : IXposedHookLoadPackage {
 
     private val debug: Boolean = false
 
@@ -21,7 +21,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
         @Throws(Throwable::class)
         override fun beforeHookedMethod(param: MethodHookParam) {
             var flags: Int = param.args[0] as Int
-            flags = flags and LayoutParams.FLAG_SECURE.inv()
+            flags = flags and LayoutParams.FLAG_KEEP_SCREEN_ON.inv()
             param.args[0] = flags
         }
     }
@@ -37,7 +37,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
         @Throws(Throwable::class)
         override fun beforeHookedMethod(param: MethodHookParam) {
             val params = param.args[1] as LayoutParams
-            params.flags = params.flags and LayoutParams.FLAG_SECURE.inv()
+            params.flags = params.flags and LayoutParams.FLAG_KEEP_SCREEN_ON.inv()
         }
     }
 
@@ -51,7 +51,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
      */
     override fun handleLoadPackage(loadPackageParam: LoadPackageParam?) {
         // Log Package Name
-        XposedBridge.log("Disabled FLAG_SECURE for: " + (loadPackageParam?.packageName ?: "null"))
+        XposedBridge.log("Disabled FLAG_KEEP_SCREEN_ON for: " + (loadPackageParam?.packageName ?: "null"))
 
         XposedHelpers.findAndHookMethod(
             Window::class.java, "setFlags", Int::class.javaPrimitiveType, Int::class.javaPrimitiveType,
@@ -68,7 +68,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
                 XposedHelpers.findClass("com.android.server.wm.WindowState", loadPackageParam?.classLoader)
             XposedHelpers.findAndHookMethod(windowsState, "isSecureLocked", XC_MethodReplacement.returnConstant(false))
         } catch (error: Throwable) {
-            if (debug) XposedBridge.log("Disable-FLAG_SECURE: $error")
+            if (debug) XposedBridge.log("Disable-FLAG_KEEP_SCREEN_ON: $error")
         }
 
         try {
@@ -82,7 +82,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
                 XC_MethodReplacement.returnConstant(false)
             )
         } catch (error: Throwable) {
-            if (debug) XposedBridge.log("Disable-FLAG_SECURE: $error")
+            if (debug) XposedBridge.log("Disable-FLAG_KEEP_SCREEN_ON: $error")
         }
 
         try {
@@ -94,7 +94,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
                 Window::class.java, mRemoveSecureParamHook
             )
         } catch (error: Throwable) {
-            if (debug) XposedBridge.log("Disable-FLAG_SECURE: $error")
+            if (debug) XposedBridge.log("Disable-FLAG_KEEP_SCREEN_ON: $error")
         }
 
         try {
@@ -107,7 +107,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
                 Int::class.javaPrimitiveType, mRemoveSecureParamHook
             )
         } catch (error: Throwable) {
-            if (debug) XposedBridge.log("Disable-FLAG_SECURE: $error")
+            if (debug) XposedBridge.log("Disable-FLAG_KEEP_SCREEN_ON: $error")
         }
 
         try {
@@ -117,7 +117,7 @@ class DisableFlagSecure : IXposedHookLoadPackage {
                 ViewGroup.LayoutParams::class.java, mRemoveSecureParamHook
             )
         } catch (error: Throwable) {
-            if (debug) XposedBridge.log("Disable-FLAG_SECURE: $error")
+            if (debug) XposedBridge.log("Disable-FLAG_KEEP_SCREEN_ON: $error")
         }
     }
 }

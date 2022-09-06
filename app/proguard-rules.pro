@@ -1,2 +1,2 @@
--keep class com.varuns2002.disable_flag_secure.DisableFlagSecure {*;}
+-keep class com.varuns2002.disable_flag_keep_screen_on.DisableFlagKeepScreenOn {*;}
 -keep class de.robv.android.xposed.** {*;}
