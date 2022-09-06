@@ -12,6 +12,6 @@ jobs:
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
           target_repo_url:
-            https://github.com/Xposed-Modules-Repo/com.w311ang.disable_flag_keep_screen_on.git
+            git@github.com:Xposed-Modules-Repo/com.w311ang.disable_flag_keep_screen_on.git
           ssh_private_key:                              # <-- use 'secrets' to pass credential information.
             ${{ secrets.LSPOSED_SSH_PRIVATE_KEY }}
