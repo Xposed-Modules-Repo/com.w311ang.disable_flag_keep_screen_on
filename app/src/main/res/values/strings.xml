@@ -2,6 +2,6 @@
     <string name="app_name">Disable-FLAG_KEEP_SCREEN_ON</string>
     <string name="xposed_description">Disables FLAG_KEEP_SCREEN_ON, enabling screenshots and recording in apps that normally wouldn\'t allow it.</string>
     <string-array name="scope">
-        <item>android</item>
+        <!-- <item>android</item> -->
     </string-array>
 </resources>
