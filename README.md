@@ -96,3 +96,4 @@ recording.
 
 Installing this module might have unintended consequences, such as lowered video quality.
 [Read more](https://forum.xda-developers.com/t/magisk-module-liboemcrypto-disabler-for-drm-protected-content-netflix-my5-etc.3794393)
+
