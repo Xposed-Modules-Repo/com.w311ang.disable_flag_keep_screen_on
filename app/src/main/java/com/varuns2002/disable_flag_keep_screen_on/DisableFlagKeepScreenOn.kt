@@ -1,4 +1,4 @@
-package com.varuns2002.disable_flag_keep_screen_on
+package com.w311ang.disable_flag_keep_screen_on
 
 import android.view.SurfaceView
 import android.view.Window

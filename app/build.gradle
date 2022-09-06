@@ -6,7 +6,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.varuns2002.disable_flag_keep_screen_on"
+        applicationId "com.w311ang.disable_flag_keep_screen_on"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 2
