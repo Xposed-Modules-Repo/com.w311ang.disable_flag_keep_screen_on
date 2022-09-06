@@ -59,7 +59,7 @@ class DisableFlagKeepScreenOn : IXposedHookLoadPackage {
         )
 
         XposedHelpers.findAndHookMethod(
-            SurfaceView::class.java, "setSecure", Boolean::class.javaPrimitiveType,
+            SurfaceView::class.java, "setKeepScreenOn", Boolean::class.javaPrimitiveType,
             mRemoveSetSecureHook
         )
 
